@@ -4,7 +4,6 @@ INDEX VERSION 1.134+C:\Users\Carlos\Documents\estudos\Java\ws-eclipse\.metadata\
 1571506617.index
 2265091294.index
 2938649015.index
-4006994045.index
 3820524342.index
 1865797976.index
 257760827.index

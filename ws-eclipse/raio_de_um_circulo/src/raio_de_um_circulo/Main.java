@@ -17,6 +17,8 @@ public class Main {
 		double area = pi * raio;
 		
 		System.out.printf("A = %.4f", area);
+		
+		sc.close();
 	}
 
 }
