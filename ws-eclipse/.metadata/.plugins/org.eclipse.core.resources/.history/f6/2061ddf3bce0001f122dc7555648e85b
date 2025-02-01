@@ -1,0 +1,25 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double x, z, y, A, B, C;
+		
+		 x = sc.nextDouble();
+		 z = sc.nextDouble();
+		 y = sc.nextDouble();
+		 
+		
+		A = Math.pow(x, z);
+		C = Math.pow(A, y);
+		
+		System.out.println(A, C);
+		
+		
+		}
+}
