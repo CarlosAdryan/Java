@@ -1,49 +1,41 @@
 package area_de_um_triangulo;
-
 import java.util.Locale;
 import java.util.Scanner;
+import entities.Triangle;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		
 		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Triangle x, y;
+		x = new Triangle();
+		y = new Triangle();
+				
+
 		System.out.println("Enter the measures of triangle X:");
-		double a = sc.nextDouble();
-		double b = sc.nextDouble();
-		double c = sc.nextDouble();
-		double p = (a + b + c )/2;
-		double o = p - a;
-		double x = p - b;
-		double i  = p - c;
-		double semifinal = p * o * x * i;
-		
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();
 		System.out.println("Enter the measures of triangle Y:");
-		double d = sc.nextDouble();
-		double e = sc.nextDouble();
-		double f = sc.nextDouble();
-		double g = (d + e + f )/2;
-		double h = g - d;
-		double l = g - e;
-		double k  = g - f;
-		double damnfinal = g * h * l * k;
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
 		
+		double areaX = x.area();
+		double areaY = y.area();
 		
-		System.out.print("Triangle X area: ");
-		System.out.printf("%.4f%n", Math.sqrt(semifinal));
+		System.out.printf("Triangle X area: %.4f%n", areaX);
+		System.out.printf("Triangle X area: %.4f%n", areaY);	
 		
-		System.out.print("Triangle Y area: ");
-		System.out.printf("%.4f%n", Math.sqrt(damnfinal));
-		
-		
-		if (damnfinal > semifinal) {
-			System.out.println("Larger area: Y");
-		} else {
+		if (areaX > areaY) {
 			System.out.println("Larger area: X");
+		} 
+		else {
+			System.out.println("Larger area: Y");
 		}
-		
-		
-		
 		
 		sc.close();
 
