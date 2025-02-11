@@ -4,31 +4,34 @@ import java.util.Locale;
 import java.util.Scanner;
 import entities.Triangle;
 
-
 public class Main {
+	
+		public String name;
+		public double price;
+		public int quantity;
 
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Triangle triangle = new Triangle();
-		
 		
 		System.out.println("Enter product data:");
 		System.out.print("Name: ");
-		triangle.name = sc.next();
+		String name = sc.next();
 		System.out.print("Price: ");
-		triangle.price = sc.nextDouble();
+		double price = sc.nextDouble();
 		System.out.print("Quantity in stock: ");
-		triangle.quantity = sc.nextInt();
+		int quantity = sc.nextInt();
+		Triangle triangle = new Triangle(name, price, quantity);
+		
 		
 		System.out.println();
 		System.out.println("Product data: "+ triangle);
 		
 		System.out.println();
 		System.out.print("Enter the number of products to be added in stock: ");
-		int quantity = sc.nextInt();
+		quantity = sc.nextInt();
 		triangle.addProducts(quantity);
 		
 		System.out.println();
