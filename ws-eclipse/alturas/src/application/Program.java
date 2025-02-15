@@ -31,9 +31,9 @@ public class Program {
 			alturas[i] = sc.nextDouble();
 			
 			media += alturas[i];
-			if (idades[i] < 16) {
+			if (idades[i] < 16 ) {
 				menoresq += i;	
-				names = nomes[i];		
+						
 			}
 		}
 		System.out.println();
@@ -42,7 +42,7 @@ public class Program {
 		
 		double mq = (menoresq/n) *100;
 		System.out.printf("Pessoas com menos de 16 anos: %.1f%n", mq);
-		System.out.print(names);
+		System.out.println(names);
 		System.out.println(names);
 		
 		
