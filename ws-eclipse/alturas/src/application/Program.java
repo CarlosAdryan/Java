@@ -38,7 +38,14 @@ public class Program {
 		double atm = media/n;
 		System.out.printf("Altura média: %.2f%n", atm);
 		
-		double mq = (menoresq/n) *100;
+		int cont = 0;
+		for (int i=0; i<n; i++) {
+			if (idades[i] < 16 ) {
+				cont += 1;		
+			}
+		}
+		
+		double mq = (cont *100 / n);
 		System.out.println("Pessoas com menos de 16 anos: "+mq+"%");
 		
 		for (int i=0; i<n; i++) {
@@ -46,14 +53,7 @@ public class Program {
 				System.out.printf("%s \n", nomes[i]);
 			}
 		}
-		
-		
-		
-		
-		
-	
-		
-		
+
 		sc.close();
 
 	}
