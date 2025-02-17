@@ -15,24 +15,40 @@ public class Program {
 		double [] vect = new double[n];
 		
 		double sum = 0;
+		int tst = n;
 		
-		int i = 0;
-		for(i=0; i<n; i++) {
+		for(int i=0; i<n; i++) {
 			System.out.print("Digite um numero: ");
 			vect[i] = sc.nextDouble();
-			if(vect[i] % 2 == 0) {
-				n - 1;
-				sum += vect[i] /n;	
-			} 
-			
 		}
 		
-		for(i=0; i<n; i++) {
-			
-		
+		double npares = 0;
+		double teste = 0;
+		for(int i=0; i<n; i++) {
+			if(vect[i] % 2 == 1) {
+				tst -= 1;	
+				
+			} else if (vect[i] % 2 == 0) {
+				sum += vect[i];
+				teste = sum / tst;
+				npares = vect[i];
+				
+			}
 		}
 		
-		System.out.printf("MEDIA DOS PARES = %.1f", sum);
+		if (npares == 0) {
+			System.out.println("NENHUM NUMERO PAR");
+		} else {
+			System.out.printf("MEDIA DOS PARES = %.1f", teste);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		sc.close();
