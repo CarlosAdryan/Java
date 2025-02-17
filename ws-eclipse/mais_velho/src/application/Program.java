@@ -17,7 +17,6 @@ public class Program {
 		
 		int maior = 0;
 		
-		
 		for(int i=0; i<n; i++) {
 			System.out.printf("Dados da %da pessoa:%n", i+1);
 			System.out.print("Nome: ");
