@@ -43,6 +43,13 @@ public class Employee {
 	public void increaseSalary(double percentage) {
 		salary = salary + salary * percentage / 100.0;
 	}
+
+	@Override
+	public String toString() {
+		return  id + ", " + name + ", " + String.format("%.2f", salary);
+	}
+	
+	
 	
 	
 }
