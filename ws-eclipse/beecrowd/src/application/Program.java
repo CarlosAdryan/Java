@@ -32,8 +32,6 @@ public class Program {
 			a = sc.nextInt();
 			
 		}
-		
 		sc.close();
-		
 	}
 }
