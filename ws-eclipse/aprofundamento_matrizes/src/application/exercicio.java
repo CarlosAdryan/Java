@@ -21,11 +21,11 @@ public class exercicio {
 			}
 		}
 		
+		double soma = 0;
 		for(int i=0; i<n; i++) {
-			double soma = mat[i][i] + mat[i][i];
-			System.out.println("Soma da diagonal principal =" + soma);
+			soma += mat[i][i];
 		}
-		
+		System.out.println("Soma da diagonal principal = " + soma);
 		
 		
 		
