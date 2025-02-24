@@ -1,17 +1,29 @@
 package entities;
 
+import java.util.Date;
+
 public class HourContract {
 	
+	private Date date;
 	private Double valuePerHour;
 	private Integer hours;
 	
 	public HourContract() {
 		
 	}
-	
-	public HourContract(Double valuePerHour, Integer hours) {
+
+	public HourContract(Date date, Double valuePerHour, Integer hours) {
+		this.date = date;
 		this.valuePerHour = valuePerHour;
 		this.hours = hours;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public Double getValuePerHour() {
@@ -34,6 +46,9 @@ public class HourContract {
 		return hours * valuePerHour;
 	}
 	
+	public double totalValue() {
+		return valuePerHour * hours;
+	}
 	
-
+	
 }
