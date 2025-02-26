@@ -39,7 +39,7 @@ public class Program {
 			Date contractDate = sdf.parse(sc.next());
 			System.out.print("Value per hour: ");
 			double valuePerHour = sc.nextDouble();
-			System.out.println("Duration (hours): ");
+			System.out.print("Duration (hours): ");
 			int hours = sc.nextInt();
 			HourContract contract = new HourContract(contractDate, valuePerHour, hours );
 			worker.addContract(contract);
