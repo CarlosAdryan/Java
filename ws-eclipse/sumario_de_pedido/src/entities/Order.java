@@ -8,14 +8,13 @@ import entities.enums.OrderStatus;
 
 public class Order {
 	
-	Orderitem teste = new Orderitem();
+	Orderitem orderitem = new Orderitem();
 
-	List<Order> items = new ArrayList<>();
+	List<Product> products = new ArrayList<>();
 	
 	public Order() {
 		
 	}
-	
 	
 	private Date moment;
 	private OrderStatus status;
@@ -45,5 +44,18 @@ public class Order {
 		this.status = status;
 	}
 
+	public void addItem(Product product) {
+		products.add(product);
+	}
+	
+	public void removeItem(Product product) {
+		products.remove(product);
+	}
+	
+	public List<Product> getProduct() {
+		return products;
+	}
+
+	
 	
 }
