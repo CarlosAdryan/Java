@@ -38,7 +38,8 @@ public class Program {
 		System.out.print("How many items to this order? ");
 		int n = sc.nextInt();
 		
-		int quantity = 0;
+		int teste = 0;
+		double preco  = 0;
 		for(int i=1; i<=n; i++) {
 			System.out.println("Enter #" + i + " item data: ");
 			System.out.print("Product name: ");
@@ -47,13 +48,16 @@ public class Program {
 			System.out.print("Product price: ");
 			double productPrice = sc.nextDouble();
 			System.out.print("Quantity: ");
-			quantity = sc.nextInt();
+			int quantity = sc.nextInt();
 			Product product = new Product(productName, productPrice);
 			Orderitem items = new Orderitem(quantity, productPrice);
 			order.addItem(product);
+			teste = quantity;
+			preco = productPrice;
 			
 		}
 		
+		Orderitem orderitem = new Orderitem(teste, preco);
 			
 		System.out.println();
 		System.out.println("ORDER SUMMARY:");
@@ -63,7 +67,7 @@ public class Program {
 		System.out.println("Order items: ");
 		
 		for(Product product : order.getProduct()) {
-			System.out.println(product.getName() + ", " + product.getPrice() +", Quantity: "+ quantity +", Subtotal: " );
+			System.out.println(product.getName() + ", " + product.getPrice() +", Quantity: "+ orderitem.getQuantity() +", Subtotal: " );
 		}
 		
 		
