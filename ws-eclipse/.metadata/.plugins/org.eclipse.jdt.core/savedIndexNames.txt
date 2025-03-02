@@ -3,6 +3,7 @@ INDEX VERSION 1.134+C:\Users\Carlos\Documents\estudos\Java\ws-eclipse\.metadata\
 2938649015.index
 3896099703.index
 3687739192.index
+818729905.index
 3134908008.index
 1273132703.index
 2767660031.index
@@ -10,6 +11,7 @@ INDEX VERSION 1.134+C:\Users\Carlos\Documents\estudos\Java\ws-eclipse\.metadata\
 3521043271.index
 1411132526.index
 395861830.index
+3160254357.index
 3528495696.index
 3268660312.index
 3670433896.index
@@ -40,8 +42,8 @@ INDEX VERSION 1.134+C:\Users\Carlos\Documents\estudos\Java\ws-eclipse\.metadata\
 2272289135.index
 413381370.index
 870243682.index
-2292333506.index
 2976844226.index
+2292333506.index
 3715831370.index
 1425192638.index
 886336155.index
