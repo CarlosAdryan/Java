@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSpinnerUI"/>
-    <fullyQualifiedTypeName name="entities.Rectangle"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="calculos.CurrencyConverter"/>
     <fullyQualifiedTypeName name="depositosesaques.valores"/>
@@ -29,10 +28,18 @@
     <fullyQualifiedTypeName name="entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="entities.Employee"/>
     <fullyQualifiedTypeName name="entities.OutsourcedEmployee"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="entities.UsedProduct"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="entities.SavingsAccount"/>
+    <fullyQualifiedTypeName name="entities.enums.Color"/>
+    <fullyQualifiedTypeName name="entities.Shape"/>
+    <fullyQualifiedTypeName name="java.awt.Rectangle"/>
+    <fullyQualifiedTypeName name="entities.Rectangle"/>
+    <fullyQualifiedTypeName name="entities.Circle"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="entities.Individual"/>
+    <fullyQualifiedTypeName name="entities.Company"/>
 </qualifiedTypeNameHistroy>
