@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 public class Contract {
 	
+	
+	
 	private Integer number;
 	private LocalDateTime date;
 	private Double totalValue;
@@ -36,9 +38,5 @@ public class Contract {
 
 	public void setTotalValue(Double totalValue) {
 		this.totalValue = totalValue;
-	}
-	
-	public void service.processContract(Contract Contract) {
-		
-	}
+	}	
 }

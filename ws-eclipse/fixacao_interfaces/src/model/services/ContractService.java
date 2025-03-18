@@ -4,25 +4,23 @@ import model.entities.Contract;
 
 public class ContractService {
 
-	public void processContract(Contract Contract, Integer months) {
+	public void processContract(Contract contract, Integer months) {
 	}
 	
-	private OnlinePaymentService paymentService;
+	private OnlinePaymentService onlinePaymentService;
 
-	public ContractService(OnlinePaymentService paymentService) {
-		this.paymentService = paymentService;
-	}
-
-	public OnlinePaymentService getPaymentService() {
-		return paymentService;
+	public ContractService(OnlinePaymentService onlinePaymentService) {
+		super();
+		this.onlinePaymentService = onlinePaymentService;
 	}
 
-	public void setPaymentService(OnlinePaymentService paymentService) {
-		this.paymentService = paymentService;
+	public OnlinePaymentService getOnlinePaymentService() {
+		return onlinePaymentService;
 	}
-	
-	
-	
+
+	public void setOnlinePaymentService(OnlinePaymentService onlinePaymentService) {
+		this.onlinePaymentService = onlinePaymentService;
+	}
 	
 	
 }
