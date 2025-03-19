@@ -2,7 +2,7 @@ package model.services;
 
 import model.entities.Contract;
 
-public class ContractService {
+public class ContractService{
 
 	public void processContract(Contract contract, Integer months) {
 	}
@@ -21,6 +21,7 @@ public class ContractService {
 	public void setOnlinePaymentService(OnlinePaymentService onlinePaymentService) {
 		this.onlinePaymentService = onlinePaymentService;
 	}
+
 	
 	
 }

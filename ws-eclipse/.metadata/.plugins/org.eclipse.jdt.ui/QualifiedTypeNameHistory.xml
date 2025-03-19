@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="java.time.Instant"/>
     <fullyQualifiedTypeName name="java.util.TimeZone"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="entities.enums.WorkerLevel"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="entities.Post"/>
@@ -56,4 +55,6 @@
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="model.services.ContractService"/>
     <fullyQualifiedTypeName name="model.entities.Contract"/>
+    <fullyQualifiedTypeName name="model.services.OnlinePaymentService"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

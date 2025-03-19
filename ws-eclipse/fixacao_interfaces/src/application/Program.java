@@ -37,8 +37,10 @@ public class Program {
 		OnlinePaymentService services = new PaypalService();
 		ldt = ldt.plusMonths(1);
 		
+		double installment = contractvalue / installments;
+		
 		for (int i = 1; i <= installments; i++) {		
-			System.out.println(fmt.format(ldt) + " - " + services.paymentFee(services.interest(200.00, i)));
+			System.out.println(fmt.format(ldt) + " - " + services.paymentFee(services.interest(installment, i)));
 			 ldt = ldt.plusMonths(1);
 		}
 		
