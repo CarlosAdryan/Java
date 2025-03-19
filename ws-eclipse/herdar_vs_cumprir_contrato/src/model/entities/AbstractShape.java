@@ -2,7 +2,7 @@ package model.entities;
 
 import model.enums.Color;
 
-public class AbstractShape {
+public abstract class AbstractShape implements Shape{
 	
 	private Color color;
 
