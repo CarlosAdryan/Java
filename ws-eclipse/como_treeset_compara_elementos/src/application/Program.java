@@ -11,7 +11,7 @@ public class Program {
 		
 		Set<Product> set = new TreeSet<>();
 		
-		set.add(new Product("Tv", 900.0));
+		set.add(new Product("TV", 900.0));
 		set.add(new Product("Notebook", 1200.0));
 		set.add(new Product("Tablet", 400.0));
 		
