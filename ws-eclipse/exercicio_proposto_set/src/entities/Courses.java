@@ -2,35 +2,41 @@ package entities;
 
 public class Courses {
 	
-	private int coursea;
-	private int courseb;
-	private int coursec;
-	
-	public Courses(int coursea, int courseb, int coursec) {
-		this.coursea = coursea;
-		this.courseb = courseb;
-		this.coursec = coursec;
+	private int course;
+
+	public Courses(int course) {
+		super();
+		this.course = course;
 	}
-	public int getCoursea() {
-		return coursea;
+
+	public int getCourse() {
+		return course;
 	}
-	public void setCoursea(int coursea) {
-		this.coursea = coursea;
+
+	public void setCourse(int course) {
+		this.course = course;
 	}
-	public int getCourseb() {
-		return courseb;
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + course;
+		return result;
 	}
-	public void setCourseb(int courseb) {
-		this.courseb = courseb;
-	}
-	public int getCoursec() {
-		return coursec;
-	}
-	public void setCoursec(int coursec) {
-		this.coursec = coursec;
-	}
-	public int sum() {
-		return coursea + courseb + coursea;
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Courses other = (Courses) obj;
+		if (course != other.course)
+			return false;
+		return true;
 	}
 	
 	
