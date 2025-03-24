@@ -17,22 +17,22 @@ public class Program {
 		System.out.print("How many students for course A?");
 		int a = sc.nextInt();
 		for (int i = 0; i < a; i++) {
-			int d = sc.nextInt();
-			set.add(new Courses(d));
+			int singlecod = sc.nextInt();
+			set.add(new Courses(singlecod));
 		}
 
 		System.out.print("How many students for course B?");
 		int b = sc.nextInt();
 		for (int i = 0; i < b; i++) {
-			int e = sc.nextInt();
-			set.add(new Courses(e));
+			int singlecod = sc.nextInt();
+			set.add(new Courses(singlecod));
 		}
 
 		System.out.print("How many students for course C?");
 		int c = sc.nextInt();
 		for (int i = 0; i < c; i++) {
-			int f = sc.nextInt();
-			set.add(new Courses(f));
+			int singlecod = sc.nextInt();
+			set.add(new Courses(singlecod));
 		}
 		
 		System.out.println("Total students: " + set.size());
