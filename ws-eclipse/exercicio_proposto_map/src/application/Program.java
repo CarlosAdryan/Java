@@ -14,39 +14,42 @@ import entities.Candidates;
 public class Program {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print("Enter file full path: ");
 		String path = sc.next();
-		
+
+		Map<String, Integer> votes = new TreeMap<>();
+
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-			
+
 			Set<Candidates> set = new HashSet<>();
 			String line = br.readLine();
-			while(line != null) {
+			while (line != null) {
 
 				String[] candidates = line.split(",");
 				String username = candidates[0];
 				int vote = Integer.parseInt(candidates[1]);
-				
-				Map<String, Integer> votes = new TreeMap<>();
-				
-				votes.put(username, vote);
-				
-				for (String key : votes.keySet()) {
-					System.out.println(key + ": " + votes.get(key));
+
+				if (votes.containsKey(username)) {
+					votes.put(username, votes.get(username) + vote);
+				} else {
+					votes.put(username, vote);
 				}
-			
-				
+
+				line = br.readLine();
+
 			}
-			
+
+			for (String key : votes.keySet()) {
+				System.out.println(key + ": " + votes.get(key));
 			}
-		catch (IOException e) {
-			System.out.println("ERROR" + e.getMessage());
+
+		} catch (IOException e) {
+			System.out.println("ERROR " + e.getMessage());
 		}
-		
-		
+
 		sc.close();
 
 	}
