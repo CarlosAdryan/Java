@@ -27,7 +27,6 @@ INDEX VERSION 1.134+C:\Users\Carlos\Documents\estudos\Java\ws-eclipse\.metadata\
 3402651082.index
 3729101479.index
 3526823336.index
-339817158.index
 3670433896.index
 1411132526.index
 3511982161.index
