@@ -12,8 +12,5 @@ public class Program {
 				System.out.println("Posição " + i + "," + j);
 			}
 		}
-		
-		
 	}
-
 }

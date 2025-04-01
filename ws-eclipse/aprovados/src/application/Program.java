@@ -32,12 +32,8 @@ public class Program {
 			sum = (vectnota1[i] + vectnota2[i]) / 2;
 			if(sum >= 6.0) {
 				System.out.println(vectname[i]); 
-			}
-			 
+			} 
 		}
-		
 		sc.close();
-
 	}
-
 }
