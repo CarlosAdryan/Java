@@ -26,11 +26,7 @@ public class exercicio {
 			soma += mat[i][i];
 		}
 		System.out.println("Soma da diagonal principal = " + soma);
-		
-		
-		
 		sc.close();
 
 	}
-
 }
