@@ -8,20 +8,24 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
+        // Solicita o número ao usuário
         System.out.println("Enter a number");
-        long n = sc.nextLong();  // Mudado para long para aceitar números grandes
+        long n = sc.nextLong();  // Usa long para aceitar números maiores
 
-        String palavra = Long.toString(n);  // Mudança para usar Long.toString()
+        // Converte o número para String para facilitar a comparação
+        String palavra = Long.toString(n);
 
         boolean ehPalindromo = true;
 
+        // Verifica se o número é palíndromo comparando caracteres simétricos
         for (int i = 0; i < palavra.length() / 2; i++) {
             if (palavra.charAt(i) != palavra.charAt(palavra.length() - 1 - i)) {
                 ehPalindromo = false;
-                break; // não precisa continuar se já sabe que não é
+                break;  // Interrompe o loop assim que encontra um par de caracteres diferentes
             }
         }
 
+        // Exibe o resultado baseado na verificação
         if (ehPalindromo) {
             System.out.println("Is palindrome!");
         } else {
