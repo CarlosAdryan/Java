@@ -8,13 +8,24 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 	
-		System.out.println("Enter a number");
+		System.out.print("Enter a number: ");
 		int n = sc.nextInt();
 		
 		String palavra = Integer.toString(n);
 		
-		for (int i=0; i != palavra.charAt(i); i++) {
-			
+		boolean ehPalindromo = true;
+		
+		for (int i=0; i < palavra.length() / 2; i++) {
+			if (palavra.charAt(i) != palavra.charAt(palavra.length() - 1 - i)) {
+				ehPalindromo = false;
+				break; // não precisa continuar se já sabe que não é
+			}
+		}
+		
+		if (ehPalindromo) {
+			System.out.println("Is palindrome!");
+		} else {
+			System.out.println("not palindrome.");
 		}
 		
 		sc.close();
