@@ -16,6 +16,13 @@ public class Program {
         System.out.print("EF: ");
         int ef = sc.nextInt();
         
+        // Verificando a validade do triângulo
+        if (ab + cd > ef && ab + ef > cd && cd + ef > ab) {
+            System.out.println("Forms a triangle");
+        } else {
+            System.out.println("Doesn't form a triangle");
+        }
+
         sc.close();
     }
 }
